@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jspopup.js"></script>
+	<script src="js/script.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/more-form.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  
+	<title>Портфолио</title>
+</head>
+
+<body>
+<header>
+	<div id="header">
+		<div class="fixed-container">
+			<div class="header-flex">
+			 <nav class="header-flex__menu">
+			 	<a href="#main-idoing" class="header-flex__menu_link" >Услуги</a>
+			 	<a href="#my-works" class="header-flex__menu_link-portfolio_colored">Портфолио</a>
+			 	<a href="#gradient" class="header-flex__menu_link">Стоимость</a>
+			 </nav>
+
+    	<div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>  
+      
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#main-idoing">Услуги</a></li>
+          <li><a class="menu__item" href="#my-works">Портфолио</a></li>
+          <li><a class="menu__item" href="#gradient">Стоимость</a></li>
+        </ul>
+      </div>
+
+			 <address class="header-items">
+			 	<span class="header-items__phone"><a href="tel:+7(499)995-55-77">+7(499)995-55-77</a></span>
+			 	<button class="header-items__call" name="popup" rel="call_form">Заказать звонок</button>
+			 	<button class="header-items__call-mini" name="popup" id="popup-mini" rel="call_form"></button>
+        <div class="popup call_form">
+          <div class="call-from_head">
+            <p>Заказать обратный звонок</p>
+            <a class="close" href="#">Close</a>
+          </div>
+          <form action="https://echo.htmlacademy.ru/" class="form_validate" >
+            <label for="Name">Ваше имя:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="phone">Телефон:</label>
+            <input class="phone" type="text" name="phone"   id="phone" placeholder="+7 (999) 999-9999">
+            <br>
+            <input type="checkbox" name="agreement" value="yes" required><span>Я соглашаюсь на обработку моих<br> персональных данных</span><br>
+            <input type="submit" value="Позвонить мне"> 
+          </form>
+        </div>
+			 </address>
+			</div>
+		</div>	
+	</div>
+</header>
+
+<main>
+  <section>
+	 <div id="main-continer">
+    <div class="main-object-1 "><span >{ }</span></div>
+    <div class="main-object-2 "><span >{ }</span></div>
+    <div class="main-object-3"><span >&lt;div&gt;</span></div>
+    <div class="main-object-4"><span >&lt;div&gt;</span></div>
+    <div class="main-object-5"><span >#</span></div>
+    <div class="main-object-6"><span >&lt;/&gt;</span></div>
+
+	 	<div class="fixed-container">
+	 		<div class="me">
+	 		 <div class="itemscollaspe">
+	 		   <h1>Зайцев Денис</h1>
+	 		   <h2>Frontend-разработчик и веб-верстальщик</h2>
+	 		   <button class="main-bt" name="popup" rel="more_form">Узнать больше</button>
+	 		 </div>
+           <div class="popup more_form">
+          <div class="more_form_head">
+            <p>Хочу узнать больше</p>
+            <a class="close" href="#">Close</a>
+          </div>
+          <form action="https://echo.htmlacademy.ru/" class="form-more_validate" >
+            <label for="Name">Ваше имя:</label><br>
+            <input type="text" name="Name" id="Name">
+            <br>
+            <label for="email">Ваша почта:</label><br>
+            <input type="email" name="email" id="email">
+            <br>
+            <textarea name="question" id="question"  placeholder="Ваш вопрос"></textarea>
+            <br>
+            <input type="checkbox" name="agreement" value="yes" required><span>Я соглашаюсь на обработку моих<br> персональных данных</span><br>
+            <input type="submit" value="Отправить"> 
+          </form>
+         </div>	
+	 		</div>
+	 	</div>	
+	 </div>	
+  </section>
+
+  <section>
+	 <div id="itemscollaspenew">
+	 	<h1>Зайцев Денис</h1>
+	 	<h2>frontend-разработчик и веб-<br>верстальщик</h2>
+	 	<button class="main-bt hover-shadow" name="popup" rel="more_form">Узнать больше</button>
+	 </div>
+  </section>
+
+  <section>
+    <div id="main-idoing">
+      <div class="fixed-container">
+        <h3>Что я делаю</h3>
+       <div class="idoing-flex">
+        <div class="idoing-container">
+          <div class="layout"></div>
+          <p>Вёрстка лендинг–страниц<br>и сайтов любой сложности</p>
+        </div>
+        <div class="idoing-container">
+          <div class="adaptive-layout"></div>
+          <p>Адаптивная вёрстка под все<br>браузеры и устройства</p>
+        </div>
+        <div class="idoing-container">
+          <div class="development"></div>
+          <p>Frontend–разработка<br>и программирование</p>
+        </div>
+        <div class="idoing-container">
+          <div class="completion"></div>
+          <p>Исправление и доработка<br>существующей вёрстки</p>
+        </div>
+       </div>
+       <button class="main-idoing-bt" name="popup" rel="more_form">Узнать стоимость</button>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+	 <div id="my-works">
+	 	<div class="fixed-container">
+        <h3>Примеры моих работ</h3> 
+      <section class="slider container">  
+        <h4>Валидатор</h4>
+	 	   <ul class="slider__list">
+        <li class="slider__item">
+          <img src="img/1Работа.png" alt="1Работа.png">
+        </li>
+        <li class="slider__item">
+          <img src="img/2Работа.png" alt="2Работа.png">
+        </li>
+        <li class="slider__item">
+          <img src="img/3Работа.png" alt="3Работа.png">
+        </li>
+        <li class="slider__item">
+          <img src="img/1Работа.png" alt="1Работа.png">
+        </li>
+        <li class="slider__item">
+          <img src="img/2Работа.png" alt="2Работа.png">
+        </li>
+      </ul>
+    
+    <button
+      class="slider__button slider__button--prev"
+      aria-label="Предыдущий слайд"
+    ></button>
+
+    <button
+      class="slider__button slider__button--next"
+      aria-label="Следующий слайд"
+    ></button>
+
+    <div
+      class="slider__pagination paginator"
+      aria-hidden="true"
+    ></div>
+     </section>
+		 <button class="order" name="popup" rel="call_form">Заказать проект</button>
+		</div>
+	 </div>
+  </section>
+
+  <section>
+    <h4>Валидатор</h4>
+   <article>
+    <h4>Валидатор</h4>
+	  <div id="gradient">
+     <div class="gradient-object-1"><span >{ }</span></div>
+     <div class="gradient-object-2"><span >{ }</span></div>
+     <div class="gradient-object-3"><span >&lt;div&gt;</span></div>
+     <div class="gradient-object-4"><span >#</span></div>
+     <div class="gradient-object-5"><span >&lt;/&gt;</span></div>
+	   <div class="gradient-text">
+	 	  <p>Адаптивная вёрстка под все устройства<br>
+	 	     и браузеры от 1000 рублей всего за 4 часа.*</p>
+	   </div>
+	   <div class="cost">
+	 	   <p><small>* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,<br>в зависимости от сложности задач.</small></p>
+     </div>
+    </div>
+   </article>
+  </section>
+</main>
+
+
+<footer>
+	<div class="navbar">
+		<div class="fixed-container">
+			<div class="navbar-flex">
+        <nav>
+				  <ul class="navbar-left">
+				  	<li><a href="#main-idoing">Услуги</a></li>
+				  	<li><a href="#my-works">Портфолио</a></li>
+				  	<li><a href="#gradient">Стоимость</a></li>
+				  </ul>
+        </nav>
+				<div class="navbar-center">
+					<p><i class="fa fa-phone" aria-hidden="true">
+					</i><span><a href="tel:+7(499)995-77-55">+7(499)995-77-55</a>
+					</span></p>
+					<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:dmitry@alekseev.com">zayczev2012@mail.ru</a></p>
+				</div>
+				<div class="navbar-right">
+					<button class="navbar-bt"  name="popup" rel="call_form">Заказать звонок</button>
+          <address>
+          <div class="navbar-right_social-flex">
+					   <a href="https://vk.com/den4ik280"><div class="icon hvr-float-shadow"></div></a>
+					   <a href=""> <div class="fb hvr-float-shadow"></div></a>
+					   <a href=""><div class="tr hvr-float-shadow"></div></a>
+					   <a href=""><div class="ig hvr-float-shadow"></div></a>
+           </div>
+          </address>
+				</div>
+	    </div>
+	  </div>
+  </div>
+
+	<div id="footer">
+		<small>© Денис Зайцев, 2019-2020</small>
+	</div>
+</footer>
+
+
+</body>
+</html>
