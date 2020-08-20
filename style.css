@@ -549,7 +549,7 @@ a[href^="mailto:"] {
 }
 
 .icon{
-	background-image: url("img/соц-сети.png");
+	background-image: url("img/social-networks.png");
 	height: 29px;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -557,7 +557,7 @@ a[href^="mailto:"] {
 }
 
 .fb{
-	background-image: url("img/соц-сети.png");
+	background-image: url("img/social-networks.png");
 	background-position: -60px;
 	cursor: pointer;
 	height: 29px;
@@ -566,7 +566,7 @@ a[href^="mailto:"] {
 }
 
 .tr{
-	background-image: url("img/соц-сети.png");
+	background-image: url("img/social-networks.png");
 	background-position: -110px;
 	cursor: pointer;
 	height: 29px;
@@ -576,7 +576,7 @@ a[href^="mailto:"] {
 
 
 .ig{
-	background-image: url("img/соц-сети.png");
+	background-image: url("img/social-networks.png");
 	background-position: -170px;
 	cursor: pointer;
 	height: 27px;
